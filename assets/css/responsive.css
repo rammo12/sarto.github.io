@@ -1,0 +1,221 @@
+/*===============
+Project Name: Sarto Web Design Template
+Developed By: Rammo Paul
+Project Created: 19 August 2022
+================*/
+
+/* //// Media Queary ///*/
+/* large devices (landscape tablets, 991px to 768px) */
+@media only screen and (max-width: 991px){
+    /*== Navbar ==*/
+    .navbar{
+        position: initial;
+    }
+    .logo-light{
+        display: none;
+    }
+    .dark-logo{
+        display: block;
+    }
+    /* when scroll navbar fixed active */
+    .fixed{
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        z-index: 99999;
+        top: 0px;
+        box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
+        transition: 0.5s all ease;
+        border-bottom: 1px solid transparent;
+    }
+    .nav-links{
+        display: block;
+        position: fixed;
+        top: 0px;
+        z-index: 111;
+        background: #fff;
+        width: 100%;
+        transition: 0.9s all ease;
+        overflow: scroll;
+        height: 100vh;
+    }
+    .nav-links::-webkit-scrollbar{
+        width: 0px;
+    }
+    .nav-links{
+        display: none;
+    }
+    #top-menu-btn:checked ~ .nav-links{
+        display: block;
+        right: 0;
+    }
+    .top-menu-btn i{
+        color: #000;
+        font-size: 22px;
+        display: block;
+    }
+    .nav-links .top-cancel-btn i{
+        position: fixed;
+        right: 10px;
+        line-height: 70px;
+        font-size: 17px;
+        display: block;
+        z-index: 999;
+    }
+    .navbar .nav-links li{
+        padding: 10px 0;
+        border-bottom: 1px solid #bb1a14;
+    }
+    .nav-links li a{
+        color: #000;
+    }
+    .nav-links li .active::after{
+        background-color: transparent;
+    }
+    .nav-links li .toggle::after{
+        background-color: transparent;
+    }
+    .nav-links li .drop-menu{
+        visibility: visible;
+        position: relative;
+        top: 0;
+        border-top: none;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .nav-links li:hover .drop-menu{
+        visibility: visible;
+        top: 0;
+    }
+    .mega-menu-box{
+        visibility: visible;
+        position: relative;
+        top: 20px;
+    }
+    .nav-links li:hover .mega-menu-box{
+        top: 20px;
+    }
+    .contents .row{
+        width: 100%;
+    }
+    .mega-menu-box .contents{
+        display: block;
+        padding: 23px 46px;
+    }
+    .shopping-cart {
+        display: none;
+    }
+    .nav-links .search-icon {
+        display: none;
+    }
+    .menu-btn i{
+        color: #000;
+    }
+
+    /*== Hero area ==*/
+    .caption .caption-content h2{
+        font-size: 67px;
+    }
+    .caption .caption-content a{
+        padding: 13px 35px;
+        font-size: 13px;
+    }
+
+    /*== Gallary Area ==*/
+    .gallary-contents{
+        padding: 94px 17% 122px 33% !important;
+    }
+    .achivment-area .gallary-contents {
+        padding: 55px !important;
+    }
+    .achivment-title h3{
+        font-size: 32px;
+    }
+
+    /*== About Area ==*/
+    .about-body{
+        padding: 94px 17% 122px 33%;
+    }
+    .about-body h3 {
+        font-size: 34px;
+    }
+    .services-img img{
+        height: 21vh;
+    }
+    .vc_column-footer .col-md-6{
+        padding: 0 48px !important;
+    }
+}
+
+/* medium devices (potrait tablets, 767px to 500px) */
+@media only screen and (max-width: 767px){
+    /*== Hero area ==*/
+    .caption .caption-content h2{
+        font-size: 52px;
+    }
+    .mix-design-content{
+        width: 100%;
+    }
+    .port-bg-1{
+        height: 400px;
+    }
+    .feature-box h2{
+        font-size: 45px;
+    }
+    .feature-box .edgtf-quote-mark{
+        top: 0;
+        left: 0;
+    }
+}
+
+/* small devices (mobile-phone, 500px to small devices) */
+@media only screen and (max-width: 500px){
+    .caption .caption-content h2{
+        font-size: 40px;
+    }
+    .gallary-contents{
+        padding: 54px !important;
+    }
+    .gallary-contents h3{
+        font-size: 30px;
+    }
+    /*== About Area ==*/
+    .about-body{
+        padding: 54px;
+    }
+    .feature-box{
+        padding: 9% 17%;
+    }
+    .feature-box h2{
+        font-size: 25px;
+    }
+    .vc_column-services .services-img{
+        text-align: center;
+    }
+    .vc_column-services .services-img a{
+        width: 100%;
+    }
+    .vc_column-footer .col-md-6{
+        padding: 0 20px !important;
+    }
+}
+
+/* small devices (mobile-phone, 500px to small devices) */
+@media only screen and (max-width: 420px){
+    .vc_column-footer{
+        padding: 40px 11px 44px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
